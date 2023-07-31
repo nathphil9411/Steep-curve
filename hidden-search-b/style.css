@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+form {
+  padding: 0.2em;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 4em;
+  display: flex;
+  border-radius: 0.4em;
+}
+
+input:focus {
+  outline: none;
+}
+button {
+  padding: 0.5em;
+  cursor: pointer;
+}
+/* this is the class that javascript would manipulate*/
+
+.hidden {
+  opacity: 0;
+}
+input {
+  width: 100%;
+  padding: 0.5em;
+  box-shadow: 0 1px 0px black;
+  transition: opacity 0.5s ease-out;
+}
