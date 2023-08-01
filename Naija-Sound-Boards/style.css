@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: radial-gradient(green, rgb(167, 163, 163));
+  background-image: url(assets/woman-1820868_1280.jpg);
+  background-size: cover;
+  font-size: 16px;
+}
+header {
+  padding: 0.1em;
+  background-color: rgba(0, 0, 0, 0.301);
+  height: 40vh;
+  color: white;
+}
+span {
+  font-size: 0.7rem;
+}
+main {
+  background-color: rgba(0, 0, 0, 0.815);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.3em;
+}
+.soudEffect {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.3em;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0 0 3px white;
+  padding: 0.1em;
+  text-align: center;
+}
+footer {
+  height: 45vh;
+  background-color: rgba(0, 0, 0, 0.466);
+  padding-top: 2rem;
+  margin-top: 1rem;
+}
+
+.qouteContainer {
+  background-color: rgba(255, 255, 255, 0.082);
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  height: 30vh;
+  padding: 0.4em;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 10px white;
+}
