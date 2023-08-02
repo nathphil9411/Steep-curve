@@ -38,6 +38,9 @@ main {
   padding: 0.1em;
   text-align: center;
 }
+button {
+  background-color: black;
+}
 footer {
   height: 45vh;
   background-color: rgba(0, 0, 0, 0.466);

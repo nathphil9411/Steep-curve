@@ -1,11 +1,29 @@
 const main = document.getElementById("main");
-const oky = document.getElementById("okay");
-console.log(oky);
-main.addEventListener("click", function runsound(e) {
-  if (e.target.classList.contains("soudEffect")) {
-    console.log("i am okay");
-    oky.play();
-    console.log(e.target.firstElementChild).play();
-    oky.onpause();
-  }
+const soundId = [
+  "bird",
+  "thunder",
+  "river",
+  "beach",
+  "rain",
+  "piano",
+  "nature",
+];
+
+soundId.forEach(function (sound) {
+  const btn = document.createElement("button");
+  btn.classList.add("soudEffect");
+  btn.innerText = sound;
+  btn.addEventListener("click", () => {
+    stop();
+    document.getElementById(sound).play();
+  });
+  document.getElementById("main").appendChild(btn);
 });
+
+function stop() {
+  soundId.forEach((sound) => {
+    const particlarSound = document.getElementById(sound);
+    particlarSound.pause();
+    particlarSound.reset;
+  });
+}
