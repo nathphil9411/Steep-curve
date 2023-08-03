@@ -1,5 +1,5 @@
 "use strict";
-let nameds = prompt("whats your name");
+let nameds = prompt("whats your name") || "dear";
 const displayEl = document.getElementById("display");
 const speedEl = document.getElementById("speed");
 let named = `...Hi ${nameds} how may i help you today?`;
