@@ -37,6 +37,10 @@ main {
   box-shadow: 0 0 3px white;
   padding: 0.1em;
   text-align: center;
+  transition: all 0.2s;
+}
+.soudEffect:hover {
+  transform: scale(110%);
 }
 button {
   background-color: black;
