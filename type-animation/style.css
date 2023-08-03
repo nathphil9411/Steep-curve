@@ -3,3 +3,25 @@
   padding: 0;
   margin: 0;
 }
+body {
+  display: flex;
+  justify-content: content;
+  background-color: darksalmon;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+}
+div {
+  position: absolute;
+  bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.13);
+  padding: 1rem 2rem;
+}
+input {
+  border: none;
+  background-color: darksalmon;
+}
+input:focus {
+  outline: none;
+}

@@ -4,8 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>typing-effect</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
-    <h1>Starting up....</h1>
+    <h1 id="display">Starting up....</h1>
+    <div>
+      <label for="speed">speed:</label>
+      <input
+        type="number"
+        name="speed"
+        id="speed"
+        value="1"
+        min="1"
+        max="6"
+        step="1"
+      />
+    </div>
   </body>
 </html>
