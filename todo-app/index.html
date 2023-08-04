@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styletodo.css" />
+    <title>ConzavIt</title>
+  </head>
+  <body>
+    <div class="headercontainer">
+      <a href="#"><h1>ConzavIt</h1></a> 
+      
+    </div>
+
+    <div class="container">
+      <form id="todo-form">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="Enter a new task" 
+          required 
+        />
+        <button type="submit" id="add-button">+</button>
+      </form>
+      <div class="todo-list">
+        <div class="hiding hidden" id="task_information" >
+        <div class="todoDescription " >
+          <label for="due date">Due Date <input type="date" style="float: right; padding: 0; " placeholder="enter date" id="date"/></label>
+          <label for="due time">Time <input type="time" style="float: right; padding: 0;  " value="01:24" id="time"/></label>
+          <label for="classlist"> Group list <select name="classlist" id="classlist" style="float: right; ">
+            <option value="defualt">Default</option>
+            <option value="work">work</option>
+            <option value="chores">Chores</option>
+            <option value="liesure">Liesure</option></select
+          ></label>
+          <textarea
+            name="additional description"
+            id="ad"
+            cols="30"
+            rows="10"
+            placeholder="additional description"
+          ></textarea
+          >
+          <button type="submit" id="save">save</button>
+        </div>
+        </div>
+        <div class="listItems" id="listItems">
+        
+        
+        <!-- List items will be dynamically added here -->
+      </div>
+    </div>
+    <script src="scripttodo.js"></script>
+  </body>
+</html>

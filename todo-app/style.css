@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  height: 0.2em;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.25em;
+}
+.headercontainer {
+  background-color: red;
+  height: 6em;
+  background-image: url(/scenic-2200x1331.png);
+
+  color: black;
+}
+
+h1 {
+  float: left;
+  padding: 0.5em;
+  z-index: 1;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+}
+
+input {
+  flex: 1;
+  padding: 0.65em;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 0.65em;
+  background-color: #00a8ff;
+  color: white;
+  border: none;
+  font-size: 1rem;
+}
+
+.todo-list {
+  margin-top: 0.5em;
+
+  margin-left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.767);
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 0.3em;
+}
+.todo-list input {
+  margin-left: 0.65em;
+  margin-bottom: 1em;
+}
+
+.todo-item {
+  background-color: #f5f6fa;
+  padding: 0.65em;
+}
+
+.todo-text {
+  display: flex;
+  align-items: center;
+}
+textarea {
+  max-width: 100%;
+  min-width: 100%;
+  margin: 1em 0em;
+  border: 1px solid white;
+  padding: 0.2em;
+  background-color: black;
+  color: white;
+}
+.listItems {
+  box-shadow: 0 0 5px white;
+}
+.listItems div {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.123);
+  padding-top: 0.2em;
+}
+.listItems button {
+  float: right;
+  margin: 0 0.5em;
+  font-size: 0.7rem;
+  padding: 0.2em 0.5em;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 0.2em;
+}
+
+.todoDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, 0.815);
+  color: black;
+  border-radius: 0.2em;
+  margin-top: 1em;
+  border: 2px solid white;
+  box-shadow: 0 0 5px white;
+  padding: 0.2em;
+}
+.hiding {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2em;
+  transition: all 0.5s;
+}
+.hidden {
+  display: none;
+}
